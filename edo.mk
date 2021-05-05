@@ -268,7 +268,6 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
-    libvulkan \
     vendor.display.config@1.5 \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
