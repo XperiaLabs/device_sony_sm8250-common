@@ -46,7 +46,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     SonyEdoFrameworksResCommon \
-    SonyEdoSettingsProviderOverlayCommon \
     SonyEdoSettingsResCommon \
     SonyEdoSystemUIResCommon \
     SonyEdoTelephonyResCommon \
