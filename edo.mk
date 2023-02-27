@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_ENABLE_BLUR := true
+
 # Include common vendor stuff
 $(call inherit-product, vendor/sony/edo/edo-vendor.mk)
 
@@ -364,7 +366,6 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.sony
-
 
 # Net
 PRODUCT_PACKAGES += \
