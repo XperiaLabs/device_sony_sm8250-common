@@ -15,7 +15,10 @@
 #
 
 # Include common vendor stuff
-$(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
+$(call inherit-product, vendor/sony/edo/edo-vendor.mk)
+
+# Inherit from sony extra
+$(call inherit-product-if-exists, vendor/sony/extra-edo/extra.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
