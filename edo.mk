@@ -449,6 +449,11 @@ PRODUCT_PACKAGES += \
     com.sony.device \
     com.sony.idd_dummy
 
+# Sony device library
+PRODUCT_PACKAGES += \
+    com.sony.device \
+    com.sony.idd_dummy
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
