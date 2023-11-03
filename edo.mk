@@ -454,6 +454,11 @@ RODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Sony device library
+PRODUCT_PACKAGES += \
+    com.sony.device \
+    com.sony.idd_dummy
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
