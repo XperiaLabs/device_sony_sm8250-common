@@ -211,14 +211,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init_thermal.sh \
     init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.msim.sh \
-    init.qcom.factory.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sdio.sh \
