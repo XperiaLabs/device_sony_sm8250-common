@@ -36,8 +36,6 @@ on init
 
     # Enable panic on out of memory
 
-    write /proc/sys/vm/swappiness 100
-
     # SONY: Enable wakeup irq module
     write /sys/devices/platform/wakeup_debug.0/enable 1
 
