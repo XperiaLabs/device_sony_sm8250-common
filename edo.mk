@@ -213,6 +213,7 @@ PRODUCT_PACKAGES += \
     init.qcom.efs.sync.sh \
     init.qcom.msim.sh \
     init.qcom.post_boot.sh \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.sdio.sh \
     init.qcom.sensors.sh \

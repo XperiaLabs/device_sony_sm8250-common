@@ -12,7 +12,6 @@ on early-init
         flash_led \
         camera_sync
 
-
     # Enable power key force crash on userdebug variant
 
     # load kernel module to read ufs write/erase count via debugfs
@@ -319,7 +318,6 @@ on property:persist.vendor.battery.smt_chg=charging_resume
 
 on boot
     write /proc/sys/vm/dirty_ratio 5
-    write /proc/sys/vm/dirty_background_ratio 1
 
     # start fingerprint HAL service
     start ets_hal
