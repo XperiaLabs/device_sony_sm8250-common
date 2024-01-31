@@ -103,11 +103,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+TARGET_RO_FILE_SYSTEM_TYPE ?= ext4
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=erofs \
+    FILESYSTEM_TYPE_vendor=$(TARGET_RO_FILE_SYSTEM_TYPE) \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
@@ -523,6 +526,3 @@ PRODUCT_COPY_FILES += \
 # XperiaParts
 PRODUCT_PACKAGES += \
     XperiaParts
-
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-TARGET_RO_FILE_SYSTEM_TYPE ?= ext4
