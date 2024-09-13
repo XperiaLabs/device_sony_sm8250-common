@@ -78,6 +78,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
         fi
         ;;
+    vendor/lib64/libwvhidl.so)
+        "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+        ;;
     esac
 }
 
