@@ -482,7 +482,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-#    vendor.lineage.touch@1.0-service.sony
+    vendor.lineage.touch@1.0-service.sony
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -537,8 +537,9 @@ PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
-# XperiaModules
-$(call inherit-product, hardware/sony/XperiaModules.mk)
+# XperiaParts
+PRODUCT_PACKAGES += \
+    XperiaParts
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_RO_FILE_SYSTEM_TYPE ?= ext4
