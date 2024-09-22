@@ -1,3 +1,4 @@
+
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +20,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_VENDOR := sony
 
-COMMON_PATH := device/sony/edo
+COMMON_PATH := device/sony/sm8250-common
 
 # A/B
 AB_OTA_UPDATER := true
@@ -236,4 +237,4 @@ CONFIG_IEEE80211AC := true
 CONFIG_IEEE80211AX := true
 
 # Include the proprietary files BoardConfig.
-include vendor/sony/edo/BoardConfigVendor.mk
+include vendor/sony/sm8250-common/BoardConfigVendor.mk

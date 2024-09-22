@@ -15,12 +15,7 @@
 #
 
 # Include common vendor stuff
-$(call inherit-product, vendor/sony/edo/edo-vendor.mk)
-
-# Inherit from sony extra
-ifeq ($(TARGET_DOLBY),true)
-    $(call inherit-product, vendor/sony/extra-edo/extra.mk)
-endif
+$(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
