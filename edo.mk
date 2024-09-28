@@ -365,7 +365,7 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.sony_edo
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.sony
 
 # Net
